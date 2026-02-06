@@ -54,14 +54,28 @@
       width: 32px;
       height: 32px;
       border-radius: 6px;
+      overflow: hidden;
+    }
+
+    .logo-icon img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
 
     .btn {
       background: var(--red);
-      padding: 12px 22px;
-      border-radius: 8px;
+      padding: 14px 24px;
+      border-radius: 10px;
       font-weight: 700;
       font-size: 14px;
+
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+
+      line-height: 1.2;
+      white-space: nowrap;
     }
 
     /* ---------- HERO VIDEO ---------- */
@@ -248,8 +262,6 @@
       margin-bottom: 16px;
     }
 
-    /* ---------- RESPONSIVE ---------- */
-
     @media (max-width: 768px) {
       header {
         padding: 20px 24px;
@@ -263,23 +275,27 @@
   <header>
     <div class="logo">
       <div class="logo-icon">
-        <img height="32" src="public/ic_launcher.png" />
+        <img src="public/ic_launcher.png" alt="GPRODE logo">
       </div>
       GPRODE
     </div>
-    <a href="https://play.google.com/store/apps/details?id=com.cianciodamian.gprode" class="btn">Descargar App</a>
+    <a href="https://play.google.com/store/apps/details?id=com.cianciodamian.gprode" class="btn">
+      Descargar App
+    </a>
   </header>
 
-  <!-- HERO VIDEO -->
+  <!-- HERO -->
   <section class="hero">
-    <video autoplay muted loop playsinline>
+    <video autoplay muted loop playsinline preload="metadata">
       <source src="public/hero-video.mp4" type="video/mp4">
     </video>
 
     <div class="hero-content">
       <h1>Jugá al prode de Fórmula 1</h1>
       <p>Predicciones, puntos y competencia carrera a carrera.</p>
-      <a href="https://play.google.com/store/apps/details?id=com.cianciodamian.gprode" class="btn">Descargar en Google Play</a>
+      <a href="https://play.google.com/store/apps/details?id=com.cianciodamian.gprode" class="btn">
+        Descargar en Google Play
+      </a>
     </div>
   </section>
 
@@ -295,22 +311,18 @@
         <h3>Predicciones por carrera</h3>
         <p>Clasificación y carrera con sistema de puntos inteligente</p>
       </div>
-
       <div class="feature">
         <h3>Predicción de campeonatos</h3>
         <p>Pilotos y constructores para toda la temporada</p>
       </div>
-
       <div class="feature">
         <h3>Sistema de puntos</h3>
         <p>Algoritmo que premia la precisión</p>
       </div>
-
       <div class="feature">
         <h3>Competí con amigos</h3>
         <p>Ligas privadas y rankings</p>
       </div>
-
       <div class="feature">
         <h3>Optimizado para mobile</h3>
         <p>Experiencia fluida en tu teléfono</p>
@@ -327,15 +339,15 @@
 
     <div class="mockups">
       <div>
-        <div class="phone"><img src="public/qualy.jpg"></div>
+        <div class="phone"><img src="public/qualy.jpg" alt="Predicciones de clasificación"></div>
         <div class="phone-label">Predicciones de clasificación</div>
       </div>
       <div>
-        <div class="phone"><img src="public/carrera.jpg"></div>
+        <div class="phone"><img src="public/carrera.jpg" alt="Predicciones de carrera"></div>
         <div class="phone-label">Predicciones de carrera</div>
       </div>
       <div>
-        <div class="phone"><img src="public/puntuacion.jpg"></div>
+        <div class="phone"><img src="public/puntuacion.jpg" alt="Rankings y puntos"></div>
         <div class="phone-label">Rankings y puntos</div>
       </div>
     </div>
@@ -345,7 +357,7 @@
   <section class="manifest">
     <h2>Hecho por y para <span>fanáticos de la Fórmula 1</span></h2>
     <p>
-      Creamos GPRODE porque entendemos la pasión por la F1.
+      Creamos GPRODE porque entendemos la pasión por el automovilismo.
       Cada detalle está pensado para ofrecerte la mejor experiencia de predicciones.
     </p>
   </section>
@@ -353,7 +365,9 @@
   <!-- CTA -->
   <section class="cta">
     <h2>Descargá GPRODE</h2>
-    <a href="https://play.google.com/store/apps/details?id=com.cianciodamian.gprode" class="btn">Disponible en Google Play</a>
+    <a href="https://play.google.com/store/apps/details?id=com.cianciodamian.gprode" class="btn">
+      Disponible en Google Play
+    </a>
 
     <div class="ios-box">
       <strong>¿Usás iPhone?</strong><br>
@@ -365,12 +379,12 @@
   <footer>
     <div class="logo">
       <div class="logo-icon">
-        <img height="32" src="public/ic_launcher.png" />
+        <img src="public/ic_launcher.png" alt="GPRODE logo">
       </div>
       GPRODE
     </div>
     gprode.com.ar<br>
-    No afiliado a Formula 1, FIA ni equipos oficiales
+    No afiliado ni respaldado por Formula One®, la FIA ni equipos oficiales.
   </footer>
 
 </body>
